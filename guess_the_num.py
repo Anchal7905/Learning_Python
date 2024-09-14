@@ -1,3 +1,4 @@
+# Enjoy and have fun while running this code on your system... hope you like it
 # number guessing game in python
 # NOTE :Minimum number of guessing = log2(Upper bound – lower bound + 1)
 import random
