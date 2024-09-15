@@ -1,5 +1,4 @@
 import random
-
 print('''
       
 !!WELCOME TO S-W-G!!
