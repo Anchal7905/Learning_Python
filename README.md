@@ -1,5 +1,5 @@
 # Learning_Python
-journey to learn a new programming language python
+Self learning python module for quick revision
 
 
 topics covered in basic.py file 
