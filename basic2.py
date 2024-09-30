@@ -35,4 +35,4 @@ print(ls+lst)
 
 #Tuples --> ordered collection of data || store multiple data items || immutable || items are seperated by commas
 
-
+# to be continued further... 
