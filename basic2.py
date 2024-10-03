@@ -34,5 +34,34 @@ print(ls+lst)
 
 
 #Tuples --> ordered collection of data || store multiple data items || immutable || items are seperated by commas
+#REPRESENTATION
+check_list = [
+(1,2,4,'green') ,
+(2) ,
+1, 
+]
+for data in check_list:
+    print(f'{data} is : ',type({data}))   # SHOWS SET
+
+a = (1,2,4,'green') 
+print(type(a))        #SHOWS TUPLE (even being same data as written in list)
+
+#Manupulating tuples --> for any change, first convert it into list and then conert to tuple after changes are done.
+countries = ("Spain","Italy","India","England", "Germany")
+print(countries)
+temp = list(countries)
+temp.append("Russia")
+temp.pop(3)
+temp[2] = "Finland"
+temp = tuple(temp)
+countries = temp
+print(countries)
+
+
+# methods that will work on tuple such as count, index, etc.
+
+
+#NOTE :- f  - string is also known as literal string interpolation || focus to make the interpolation easier.
+
 
 # to be continued further... 
