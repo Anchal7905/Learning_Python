@@ -123,6 +123,10 @@ print(dict)
 dict.clear()      #removes all the item from the list
 print(dict)
 
-
+#merge two dictionary can also be performed as...
+d1 ={ "Student":"Anchal"}
+d2 = { "language":"Python"}
+d = {**d1, **d2}
+print(d)
 
 # THIS FILE INCLUDES FUNCTIONS, LIST, TUPLE, SET AND DICTIONARY AND SOME OF THEIR COMMON METHODS
