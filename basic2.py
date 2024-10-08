@@ -63,5 +63,66 @@ print(countries)
 
 #NOTE :- f  - string is also known as literal string interpolation || focus to make the interpolation easier.
 
+# SET --> unordered collection of similar data items|| enclosed in {}||unchangeable|| do't contain duplicate values
 
-# to be continued further... 
+a = set() # empty set
+info = {'carla', False, 12, 5.9,12}
+print(info)
+for i in info :  # accessing information
+    print(i)
+#SET METHODS --> UNION, INTERSECTION, DIFFERENCE, DISJOINT
+set1 = {1,2,5,6}
+set2 = {3,6,7}
+print(set1.union(set2))   #RETURN NEW SET
+print( set1, set2)
+set1.update(set2)      #update existing set
+print(set1, set2)
+
+print(set1.intersection_update(set2))     #update in existing
+print(set1.intersection(set2))    #returns a new set
+
+a = {1,2,3,4,5}
+b = {1,3}
+print(a.symmetric_difference(b))       #returns difference
+print(a,b)
+a.symmetric_difference_update(b)           #update in itself
+print(a.difference(b))
+print(a.isdisjoint(b))          #a n b = 0
+'''similarly we can use others such as issuperset(), issubset()
+add()--> to add single item
+update()--> to add multiple items at a time
+pop()--> removes the last element
+del()--> delete the set entirely
+clear()--> empty the entire set'''
+table = {1,2,3,4}
+a.remove(0)
+print(a)
+# a.remove(5)      shows error
+a.discard(5)       #return NONE  (benifit of using discard in place of remove method)
+
+
+
+#DICTIONARY
+dict = {'Anchal':'Student', "course":'B.tech',"id": 31}
+print(dict["Anchal"])
+print(dict.get("Anchal"))
+print(dict.get("stream"))       #return NONE
+# print(dict["stream"])    gives error
+print(dict.keys)
+print(dict.values)
+print(dict.items())               #accessing key value pair
+dict1 = {"stream": "CSE", "lanuage": "Python"}
+dict.update(dict1)
+print(dict)
+dict.pop("course")   #removes the passed key value pair
+print(dict)
+dict.popitem() #removes the last key value pair
+print(dict)
+del(dict["id"])   #also used to remove items,  **if key is not given then del method will delete the entire dictionary
+print(dict)
+dict.clear()      #removes all the item from the list
+print(dict)
+
+
+
+# THIS FILE INCLUDES FUNCTIONS, LIST, TUPLE, SET AND DICTIONARY AND SOME OF THEIR COMMON METHODS
